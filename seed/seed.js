@@ -1,11 +1,11 @@
 require('dotenv').config();
 const mongoose = require('mongoose');
 const bcrypt = require('bcryptjs');
-const User = require('../models/User');
-const Category = require('../models/Category');
-const Service = require('../models/Service');
-const Order = require('../models/Order');
-const Review = require('../models/Review');
+const User = require('../src/models/User');
+const Category = require('../src/models/Category');
+const Service = require('../src/models/Service');
+const Order = require('../src/models/Order');
+const Review = require('../src/models/Review');
 
 const seed = async () => {
   await mongoose.connect(process.env.MONGO_URI, {

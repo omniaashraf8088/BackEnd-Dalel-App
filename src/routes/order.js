@@ -1,7 +1,7 @@
 const express = require('express');
 const { body } = require('express-validator');
 const router = express.Router();
-const orderController = require('../controllers/orderController');
+const orderController = require('../../controllers/orderController');
 const auth = require('../middleware/auth');
 
 // GET all orders

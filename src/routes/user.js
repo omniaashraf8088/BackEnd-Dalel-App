@@ -1,7 +1,7 @@
 const express = require('express');
 const { body } = require('express-validator');
 const router = express.Router();
-const userController = require('../controllers/userController');
+const userController = require('../../controllers/userController');
 const auth = require('../middleware/auth');
 
 // GET all users (admin only)

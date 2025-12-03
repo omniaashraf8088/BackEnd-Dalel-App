@@ -1,7 +1,7 @@
 const express = require('express');
 const { body } = require('express-validator');
 const router = express.Router();
-const categoryController = require('../controllers/categoryController');
+const categoryController = require('../../controllers/categoryController');
 const auth = require('../middleware/auth');
 
 // GET all categories

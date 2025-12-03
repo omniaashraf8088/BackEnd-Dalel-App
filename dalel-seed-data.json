@@ -1,0 +1,1078 @@
+{
+  "users": [
+    {
+      "_id": {
+        "$oid": "507f1f77bcf86cd799439011"
+      },
+      "email": "ahmed.mohamed@example.com",
+      "password": "$2b$10$X4kv7j5ZcVYVv9xV7Q2HJeYXNqQj8Lg7N5S8fT3k2Q9zR1wY0v",
+      "fullName": "Ahmed Mohamed",
+      "phone": "+201234567890",
+      "avatar": "https://storage.dalel.app/avatars/ahmed.jpg",
+      "role": "user",
+      "isVerified": true,
+      "favorites": [
+        {
+          "$oid": "507f1f77bcf86cd799439101"
+        }
+      ],
+      "address": {
+        "street": "15 El-Tahrir Square",
+        "city": "Cairo",
+        "country": "Egypt",
+        "postalCode": "11511"
+      },
+      "createdAt": {
+        "$date": "2024-01-15T10:30:00Z"
+      },
+      "updatedAt": {
+        "$date": "2024-03-20T14:45:00Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "507f1f77bcf86cd799439012"
+      },
+      "email": "sara.ali@example.com",
+      "password": "$2b$10$Y5lw8k6aDbZ97vP0Y9Q3HpbZYOrRk9Mh8O6T9gU4l3A0sS2xX1w",
+      "fullName": "Sara Ali",
+      "phone": "+966501234567",
+      "avatar": null,
+      "role": "user",
+      "isVerified": false,
+      "favorites": [],
+      "address": null,
+      "createdAt": {
+        "$date": "2024-02-20T08:15:00Z"
+      },
+      "updatedAt": {
+        "$date": "2024-02-20T08:15:00Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "507f1f77bcf86cd799439013"
+      },
+      "email": "admin@dalel.app",
+      "password": "$2b$10$Z6mx9l7bEcA08wQ1Z0R4IqcaZPsSl0Ni9P7U0hV5m4B1tT3yY2x",
+      "fullName": "System Admin",
+      "phone": "+201000000000",
+      "avatar": "https://storage.dalel.app/avatars/admin.jpg",
+      "role": "admin",
+      "isVerified": true,
+      "favorites": [],
+      "address": null,
+      "createdAt": {
+        "$date": "2024-01-01T00:00:00Z"
+      },
+      "updatedAt": {
+        "$date": "2024-01-01T00:00:00Z"
+      }
+    }
+  ],
+  "admins": [
+    {
+      "_id": {
+        "$oid": "507f1f77bcf86cd799439001"
+      },
+      "email": "superadmin@dalel.app",
+      "password": "$2b$10$hashedPassword",
+      "fullName": "Super Admin",
+      "permissions": [
+        "all"
+      ],
+      "lastLogin": {
+        "$date": "2024-03-20T09:00:00Z"
+      },
+      "isActive": true,
+      "createdAt": {
+        "$date": "2024-01-01T00:00:00Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "507f1f77bcf86cd799439002"
+      },
+      "email": "content@dalel.app",
+      "password": "$2b$10$hashedPassword",
+      "fullName": "Content Manager",
+      "permissions": [
+        "products.read",
+        "products.write",
+        "categories.read",
+        "categories.write"
+      ],
+      "lastLogin": {
+        "$date": "2024-03-19T14:30:00Z"
+      },
+      "isActive": true,
+      "createdAt": {
+        "$date": "2024-02-01T00:00:00Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "507f1f77bcf86cd799439003"
+      },
+      "email": "support@dalel.app",
+      "password": "$2b$10$hashedPassword",
+      "fullName": "Support Agent",
+      "permissions": [
+        "users.read",
+        "orders.read",
+        "orders.write",
+        "contact.read",
+        "contact.write"
+      ],
+      "lastLogin": null,
+      "isActive": false,
+      "createdAt": {
+        "$date": "2024-03-01T00:00:00Z"
+      }
+    }
+  ],
+  "products": [
+    {
+      "_id": {
+        "$oid": "507f1f77bcf86cd799439101"
+      },
+      "name": "The Pharaohs: Lords of the Nile",
+      "nameAr": "الفراعنة: أسياد النيل",
+      "description": "A comprehensive guide to Ancient Egyptian rulers and their magnificent civilization.",
+      "descriptionAr": "دليل شامل لحكام مصر القديمة وحضارتهم العظيمة.",
+      "price": {
+        "$numberDecimal": "149.99"
+      },
+      "discountPrice": {
+        "$numberDecimal": "129.99"
+      },
+      "images": [
+        "https://storage.dalel.app/products/pharaohs-1.jpg",
+        "https://storage.dalel.app/products/pharaohs-2.jpg"
+      ],
+      "categoryId": {
+        "$oid": "507f1f77bcf86cd799439201"
+      },
+      "periodId": {
+        "$oid": "507f1f77bcf86cd799439301"
+      },
+      "characterId": null,
+      "stock": 50,
+      "isActive": true,
+      "tags": [
+        "egypt",
+        "pharaohs",
+        "ancient",
+        "history"
+      ],
+      "averageRating": 4.8,
+      "reviewCount": 124,
+      "createdAt": {
+        "$date": "2024-01-10T08:00:00Z"
+      },
+      "updatedAt": {
+        "$date": "2024-03-15T12:30:00Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "507f1f77bcf86cd799439102"
+      },
+      "name": "Saladin: The Warrior Sultan",
+      "nameAr": "صلاح الدين: السلطان المحارب",
+      "description": "Biography of the legendary warrior who united the Muslim world.",
+      "descriptionAr": "سيرة المحارب الأسطوري الذي وحد العالم الإسلامي.",
+      "price": {
+        "$numberDecimal": "89.99"
+      },
+      "discountPrice": null,
+      "images": [
+        "https://storage.dalel.app/products/saladin-1.jpg"
+      ],
+      "categoryId": {
+        "$oid": "507f1f77bcf86cd799439202"
+      },
+      "periodId": {
+        "$oid": "507f1f77bcf86cd799439302"
+      },
+      "characterId": {
+        "$oid": "507f1f77bcf86cd799439401"
+      },
+      "stock": 30,
+      "isActive": true,
+      "tags": [
+        "saladin",
+        "islamic",
+        "crusades",
+        "biography"
+      ],
+      "averageRating": 4.9,
+      "reviewCount": 89,
+      "createdAt": {
+        "$date": "2024-02-01T10:00:00Z"
+      },
+      "updatedAt": {
+        "$date": "2024-02-01T10:00:00Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "507f1f77bcf86cd799439103"
+      },
+      "name": "Ancient Egypt Artifact Replica - Ankh",
+      "nameAr": "نسخة طبق الأصل من آثار مصر القديمة - العنخ",
+      "description": "High-quality replica of the ancient Egyptian symbol of life.",
+      "descriptionAr": "نسخة عالية الجودة من رمز الحياة المصري القديم.",
+      "price": {
+        "$numberDecimal": "299.99"
+      },
+      "discountPrice": {
+        "$numberDecimal": "249.99"
+      },
+      "images": [
+        "https://storage.dalel.app/products/ankh-1.jpg"
+      ],
+      "categoryId": {
+        "$oid": "507f1f77bcf86cd799439203"
+      },
+      "periodId": {
+        "$oid": "507f1f77bcf86cd799439301"
+      },
+      "characterId": null,
+      "stock": 15,
+      "isActive": true,
+      "tags": [
+        "artifact",
+        "replica",
+        "ankh",
+        "egypt"
+      ],
+      "averageRating": 4.5,
+      "reviewCount": 23,
+      "createdAt": {
+        "$date": "2024-03-01T09:00:00Z"
+      },
+      "updatedAt": {
+        "$date": "2024-03-10T15:00:00Z"
+      }
+    }
+  ],
+  "categories": [
+    {
+      "_id": {
+        "$oid": "507f1f77bcf86cd799439201"
+      },
+      "name": "History Books",
+      "nameAr": "كتب التاريخ",
+      "icon": "📚",
+      "image": "https://storage.dalel.app/categories/books.jpg",
+      "parentId": null,
+      "order": 1,
+      "isActive": true,
+      "createdAt": {
+        "$date": "2024-01-01T00:00:00Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "507f1f77bcf86cd799439202"
+      },
+      "name": "Biographies",
+      "nameAr": "السير الذاتية",
+      "icon": "👤",
+      "image": null,
+      "parentId": {
+        "$oid": "507f1f77bcf86cd799439201"
+      },
+      "order": 1,
+      "isActive": true,
+      "createdAt": {
+        "$date": "2024-01-01T00:00:00Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "507f1f77bcf86cd799439203"
+      },
+      "name": "Artifacts & Replicas",
+      "nameAr": "الآثار والنسخ",
+      "icon": "🏺",
+      "image": "https://storage.dalel.app/categories/artifacts.jpg",
+      "parentId": null,
+      "order": 2,
+      "isActive": true,
+      "createdAt": {
+        "$date": "2024-01-01T00:00:00Z"
+      }
+    }
+  ],
+  "historical_periods": [
+    {
+      "_id": {
+        "$oid": "507f1f77bcf86cd799439301"
+      },
+      "name": "Ancient Egypt",
+      "nameAr": "مصر القديمة",
+      "description": "The civilization of ancient Egypt lasted from around 3100 BCE to 30 BCE.",
+      "descriptionAr": "استمرت حضارة مصر القديمة من حوالي 3100 قبل الميلاد إلى 30 قبل الميلاد.",
+      "startYear": -3100,
+      "endYear": -30,
+      "image": "https://storage.dalel.app/periods/ancient-egypt.jpg",
+      "color": "#D4AF37",
+      "order": 1,
+      "isActive": true,
+      "createdAt": {
+        "$date": "2024-01-01T00:00:00Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "507f1f77bcf86cd799439302"
+      },
+      "name": "Islamic Golden Age",
+      "nameAr": "العصر الذهبي الإسلامي",
+      "description": "A period of cultural, economic, and scientific flourishing (8th-14th century).",
+      "descriptionAr": "فترة ازدهار ثقافي واقتصادي وعلمي (القرن الثامن - الرابع عشر).",
+      "startYear": 750,
+      "endYear": 1258,
+      "image": "https://storage.dalel.app/periods/islamic-golden-age.jpg",
+      "color": "#1E5631",
+      "order": 2,
+      "isActive": true,
+      "createdAt": {
+        "$date": "2024-01-01T00:00:00Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "507f1f77bcf86cd799439303"
+      },
+      "name": "Ottoman Empire",
+      "nameAr": "الدولة العثمانية",
+      "description": "One of the longest-lasting empires in history (1299-1922).",
+      "descriptionAr": "واحدة من أطول الإمبراطوريات في التاريخ (1299-1922).",
+      "startYear": 1299,
+      "endYear": 1922,
+      "image": "https://storage.dalel.app/periods/ottoman.jpg",
+      "color": "#C41E3A",
+      "order": 3,
+      "isActive": true,
+      "createdAt": {
+        "$date": "2024-01-01T00:00:00Z"
+      }
+    }
+  ],
+  "historical_characters": [
+    {
+      "_id": {
+        "$oid": "507f1f77bcf86cd799439401"
+      },
+      "name": "Saladin",
+      "nameAr": "صلاح الدين الأيوبي",
+      "title": "Sultan of Egypt and Syria",
+      "titleAr": "سلطان مصر والشام",
+      "biography": "Saladin was the founder of the Ayyubid dynasty and the first sultan of Egypt and Syria...",
+      "biographyAr": "صلاح الدين هو مؤسس الدولة الأيوبية وأول سلطان لمصر والشام...",
+      "birthYear": 1137,
+      "deathYear": 1193,
+      "image": "https://storage.dalel.app/characters/saladin.jpg",
+      "periodId": {
+        "$oid": "507f1f77bcf86cd799439302"
+      },
+      "achievements": [
+        "Recaptured Jerusalem",
+        "United Muslim territories",
+        "Known for chivalry"
+      ],
+      "order": 1,
+      "isActive": true,
+      "createdAt": {
+        "$date": "2024-01-01T00:00:00Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "507f1f77bcf86cd799439402"
+      },
+      "name": "Cleopatra VII",
+      "nameAr": "كليوباترا السابعة",
+      "title": "Queen of Egypt",
+      "titleAr": "ملكة مصر",
+      "biography": "Cleopatra VII was the last active ruler of the Ptolemaic Kingdom of Egypt...",
+      "biographyAr": "كليوباترا السابعة كانت آخر حاكم فعلي للمملكة البطلمية في مصر...",
+      "birthYear": -69,
+      "deathYear": -30,
+      "image": "https://storage.dalel.app/characters/cleopatra.jpg",
+      "periodId": {
+        "$oid": "507f1f77bcf86cd799439301"
+      },
+      "achievements": [
+        "Last pharaoh of Egypt",
+        "Allied with Julius Caesar and Mark Antony"
+      ],
+      "order": 2,
+      "isActive": true,
+      "createdAt": {
+        "$date": "2024-01-01T00:00:00Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "507f1f77bcf86cd799439403"
+      },
+      "name": "Ibn Battuta",
+      "nameAr": "ابن بطوطة",
+      "title": "Explorer and Scholar",
+      "titleAr": "رحالة وعالم",
+      "biography": "Ibn Battuta was a Moroccan scholar who traveled extensively across the known world...",
+      "biographyAr": "ابن بطوطة كان عالماً مغربياً سافر على نطاق واسع عبر العالم المعروف...",
+      "birthYear": 1304,
+      "deathYear": 1369,
+      "image": "https://storage.dalel.app/characters/ibn-battuta.jpg",
+      "periodId": {
+        "$oid": "507f1f77bcf86cd799439302"
+      },
+      "achievements": [
+        "Traveled over 120,000 km",
+        "Wrote the famous Rihla"
+      ],
+      "order": 3,
+      "isActive": true,
+      "createdAt": {
+        "$date": "2024-01-01T00:00:00Z"
+      }
+    }
+  ],
+  "cart": [
+    {
+      "_id": {
+        "$oid": "507f1f77bcf86cd799439501"
+      },
+      "userId": {
+        "$oid": "507f1f77bcf86cd799439011"
+      },
+      "items": [
+        {
+          "productId": {
+            "$oid": "507f1f77bcf86cd799439101"
+          },
+          "quantity": 2,
+          "price": {
+            "$numberDecimal": "129.99"
+          },
+          "addedAt": {
+            "$date": "2024-03-20T10:00:00Z"
+          }
+        },
+        {
+          "productId": {
+            "$oid": "507f1f77bcf86cd799439102"
+          },
+          "quantity": 1,
+          "price": {
+            "$numberDecimal": "89.99"
+          },
+          "addedAt": {
+            "$date": "2024-03-20T10:05:00Z"
+          }
+        }
+      ],
+      "updatedAt": {
+        "$date": "2024-03-20T10:05:00Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "507f1f77bcf86cd799439502"
+      },
+      "userId": {
+        "$oid": "507f1f77bcf86cd799439012"
+      },
+      "items": [
+        {
+          "productId": {
+            "$oid": "507f1f77bcf86cd799439103"
+          },
+          "quantity": 1,
+          "price": {
+            "$numberDecimal": "249.99"
+          },
+          "addedAt": {
+            "$date": "2024-03-19T15:30:00Z"
+          }
+        }
+      ],
+      "updatedAt": {
+        "$date": "2024-03-19T15:30:00Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "507f1f77bcf86cd799439503"
+      },
+      "userId": {
+        "$oid": "507f1f77bcf86cd799439014"
+      },
+      "items": [],
+      "updatedAt": {
+        "$date": "2024-03-18T12:00:00Z"
+      }
+    }
+  ],
+  "orders": [
+    {
+      "_id": {
+        "$oid": "507f1f77bcf86cd799439601"
+      },
+      "orderNumber": "ORD-2024-0001",
+      "userId": {
+        "$oid": "507f1f77bcf86cd799439011"
+      },
+      "items": [
+        {
+          "productId": {
+            "$oid": "507f1f77bcf86cd799439101"
+          },
+          "name": "The Pharaohs: Lords of the Nile",
+          "quantity": 1,
+          "price": {
+            "$numberDecimal": "129.99"
+          },
+          "image": "https://storage.dalel.app/products/pharaohs-1.jpg"
+        }
+      ],
+      "subtotal": {
+        "$numberDecimal": "129.99"
+      },
+      "discount": {
+        "$numberDecimal": "13.00"
+      },
+      "couponCode": "WELCOME10",
+      "shippingCost": {
+        "$numberDecimal": "15.00"
+      },
+      "totalAmount": {
+        "$numberDecimal": "131.99"
+      },
+      "shippingAddress": {
+        "fullName": "Ahmed Mohamed",
+        "phone": "+201234567890",
+        "street": "15 El-Tahrir Square",
+        "city": "Cairo",
+        "country": "Egypt",
+        "postalCode": "11511"
+      },
+      "paymentMethod": "card",
+      "paymentStatus": "paid",
+      "orderStatus": "delivered",
+      "notes": null,
+      "createdAt": {
+        "$date": "2024-03-15T14:30:00Z"
+      },
+      "updatedAt": {
+        "$date": "2024-03-18T10:00:00Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "507f1f77bcf86cd799439602"
+      },
+      "orderNumber": "ORD-2024-0002",
+      "userId": {
+        "$oid": "507f1f77bcf86cd799439012"
+      },
+      "items": [
+        {
+          "productId": {
+            "$oid": "507f1f77bcf86cd799439102"
+          },
+          "name": "Saladin: The Warrior Sultan",
+          "quantity": 2,
+          "price": {
+            "$numberDecimal": "89.99"
+          },
+          "image": "https://storage.dalel.app/products/saladin-1.jpg"
+        }
+      ],
+      "subtotal": {
+        "$numberDecimal": "179.98"
+      },
+      "discount": {
+        "$numberDecimal": "0"
+      },
+      "couponCode": null,
+      "shippingCost": {
+        "$numberDecimal": "20.00"
+      },
+      "totalAmount": {
+        "$numberDecimal": "199.98"
+      },
+      "shippingAddress": {
+        "fullName": "Sara Ali",
+        "phone": "+966501234567",
+        "street": "King Fahd Road",
+        "city": "Riyadh",
+        "country": "Saudi Arabia",
+        "postalCode": "12345"
+      },
+      "paymentMethod": "cash",
+      "paymentStatus": "pending",
+      "orderStatus": "processing",
+      "notes": "Please call before delivery",
+      "createdAt": {
+        "$date": "2024-03-20T09:15:00Z"
+      },
+      "updatedAt": {
+        "$date": "2024-03-20T09:15:00Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "507f1f77bcf86cd799439603"
+      },
+      "orderNumber": "ORD-2024-0003",
+      "userId": {
+        "$oid": "507f1f77bcf86cd799439011"
+      },
+      "items": [
+        {
+          "productId": {
+            "$oid": "507f1f77bcf86cd799439103"
+          },
+          "name": "Ancient Egypt Artifact Replica - Ankh",
+          "quantity": 1,
+          "price": {
+            "$numberDecimal": "249.99"
+          },
+          "image": "https://storage.dalel.app/products/ankh-1.jpg"
+        }
+      ],
+      "subtotal": {
+        "$numberDecimal": "249.99"
+      },
+      "discount": {
+        "$numberDecimal": "0"
+      },
+      "couponCode": null,
+      "shippingCost": {
+        "$numberDecimal": "0"
+      },
+      "totalAmount": {
+        "$numberDecimal": "249.99"
+      },
+      "shippingAddress": {
+        "fullName": "Ahmed Mohamed",
+        "phone": "+201234567890",
+        "street": "15 El-Tahrir Square",
+        "city": "Cairo",
+        "country": "Egypt",
+        "postalCode": "11511"
+      },
+      "paymentMethod": "wallet",
+      "paymentStatus": "paid",
+      "orderStatus": "shipped",
+      "notes": null,
+      "createdAt": {
+        "$date": "2024-03-19T16:45:00Z"
+      },
+      "updatedAt": {
+        "$date": "2024-03-20T08:00:00Z"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "_id": {
+        "$oid": "507f1f77bcf86cd799439701"
+      },
+      "productId": {
+        "$oid": "507f1f77bcf86cd799439101"
+      },
+      "userId": {
+        "$oid": "507f1f77bcf86cd799439011"
+      },
+      "rating": 5,
+      "title": "Excellent book!",
+      "comment": "This book provides an incredible journey through ancient Egyptian history. The illustrations are stunning.",
+      "images": [
+        "https://storage.dalel.app/reviews/review1.jpg"
+      ],
+      "isVerifiedPurchase": true,
+      "helpfulCount": 15,
+      "isApproved": true,
+      "createdAt": {
+        "$date": "2024-03-01T10:00:00Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "507f1f77bcf86cd799439702"
+      },
+      "productId": {
+        "$oid": "507f1f77bcf86cd799439101"
+      },
+      "userId": {
+        "$oid": "507f1f77bcf86cd799439012"
+      },
+      "rating": 4,
+      "title": "Great content, minor issues",
+      "comment": "Very informative but the binding could be better.",
+      "images": [],
+      "isVerifiedPurchase": true,
+      "helpfulCount": 8,
+      "isApproved": true,
+      "createdAt": {
+        "$date": "2024-03-05T14:30:00Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "507f1f77bcf86cd799439703"
+      },
+      "productId": {
+        "$oid": "507f1f77bcf86cd799439102"
+      },
+      "userId": {
+        "$oid": "507f1f77bcf86cd799439011"
+      },
+      "rating": 5,
+      "title": "A masterpiece",
+      "comment": "The best biography of Saladin I've ever read. Highly recommended!",
+      "images": [],
+      "isVerifiedPurchase": false,
+      "helpfulCount": 22,
+      "isApproved": true,
+      "createdAt": {
+        "$date": "2024-02-20T09:00:00Z"
+      }
+    }
+  ],
+  "coupons": [
+    {
+      "_id": {
+        "$oid": "507f1f77bcf86cd799439801"
+      },
+      "code": "WELCOME10",
+      "description": "10% off for new users",
+      "discountType": "percentage",
+      "discountValue": {
+        "$numberDecimal": "10"
+      },
+      "minOrderAmount": {
+        "$numberDecimal": "50"
+      },
+      "maxDiscount": {
+        "$numberDecimal": "100"
+      },
+      "usageLimit": 1000,
+      "usageCount": 245,
+      "userLimit": 1,
+      "validFrom": {
+        "$date": "2024-01-01T00:00:00Z"
+      },
+      "validUntil": {
+        "$date": "2024-12-31T23:59:59Z"
+      },
+      "isActive": true,
+      "createdAt": {
+        "$date": "2024-01-01T00:00:00Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "507f1f77bcf86cd799439802"
+      },
+      "code": "FREESHIP",
+      "description": "Free shipping on orders over 100",
+      "discountType": "fixed",
+      "discountValue": {
+        "$numberDecimal": "20"
+      },
+      "minOrderAmount": {
+        "$numberDecimal": "100"
+      },
+      "maxDiscount": null,
+      "usageLimit": null,
+      "usageCount": 89,
+      "userLimit": 3,
+      "validFrom": {
+        "$date": "2024-03-01T00:00:00Z"
+      },
+      "validUntil": {
+        "$date": "2024-03-31T23:59:59Z"
+      },
+      "isActive": true,
+      "createdAt": {
+        "$date": "2024-03-01T00:00:00Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "507f1f77bcf86cd799439803"
+      },
+      "code": "RAMADAN25",
+      "description": "25% off during Ramadan",
+      "discountType": "percentage",
+      "discountValue": {
+        "$numberDecimal": "25"
+      },
+      "minOrderAmount": null,
+      "maxDiscount": {
+        "$numberDecimal": "200"
+      },
+      "usageLimit": 500,
+      "usageCount": 0,
+      "userLimit": 1,
+      "validFrom": {
+        "$date": "2024-03-10T00:00:00Z"
+      },
+      "validUntil": {
+        "$date": "2024-04-09T23:59:59Z"
+      },
+      "isActive": true,
+      "createdAt": {
+        "$date": "2024-03-01T00:00:00Z"
+      }
+    }
+  ],
+  "notifications": [
+    {
+      "_id": {
+        "$oid": "507f1f77bcf86cd799439901"
+      },
+      "userId": {
+        "$oid": "507f1f77bcf86cd799439011"
+      },
+      "type": "order",
+      "title": "Order Shipped!",
+      "titleAr": "تم شحن طلبك!",
+      "message": "Your order ORD-2024-0001 has been shipped and is on its way.",
+      "messageAr": "تم شحن طلبك ORD-2024-0001 وهو في الطريق إليك.",
+      "data": {
+        "orderId": "507f1f77bcf86cd799439601",
+        "orderNumber": "ORD-2024-0001"
+      },
+      "isRead": false,
+      "createdAt": {
+        "$date": "2024-03-20T10:00:00Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "507f1f77bcf86cd799439902"
+      },
+      "userId": {
+        "$oid": "507f1f77bcf86cd799439011"
+      },
+      "type": "promotion",
+      "title": "Special Offer!",
+      "titleAr": "عرض خاص!",
+      "message": "Get 25% off during Ramadan! Use code RAMADAN25",
+      "messageAr": "احصل على خصم 25% خلال شهر رمضان! استخدم الكود RAMADAN25",
+      "data": {
+        "couponCode": "RAMADAN25"
+      },
+      "isRead": true,
+      "createdAt": {
+        "$date": "2024-03-10T08:00:00Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "507f1f77bcf86cd799439903"
+      },
+      "userId": {
+        "$oid": "507f1f77bcf86cd799439012"
+      },
+      "type": "reminder",
+      "title": "Items in your cart",
+      "titleAr": "منتجات في سلتك",
+      "message": "You have items waiting in your cart. Complete your purchase now!",
+      "messageAr": "لديك منتجات في انتظارك في سلتك. أكمل عملية الشراء الآن!",
+      "data": {
+        "cartItemCount": 3
+      },
+      "isRead": false,
+      "createdAt": {
+        "$date": "2024-03-19T15:00:00Z"
+      }
+    }
+  ],
+  "contact_messages": [
+    {
+      "_id": {
+        "$oid": "507f1f77bcf86cd799440001"
+      },
+      "userId": {
+        "$oid": "507f1f77bcf86cd799439011"
+      },
+      "name": "Ahmed Mohamed",
+      "email": "ahmed.mohamed@example.com",
+      "phone": "+201234567890",
+      "subject": "Order not received",
+      "message": "I placed order ORD-2024-0001 last week but haven't received it yet. Can you help?",
+      "status": "resolved",
+      "assignedTo": {
+        "$oid": "507f1f77bcf86cd799439003"
+      },
+      "replies": [
+        {
+          "adminId": {
+            "$oid": "507f1f77bcf86cd799439003"
+          },
+          "message": "We apologize for the delay. Your order has been reshipped.",
+          "createdAt": {
+            "$date": "2024-03-16T10:00:00Z"
+          }
+        }
+      ],
+      "createdAt": {
+        "$date": "2024-03-15T14:00:00Z"
+      },
+      "updatedAt": {
+        "$date": "2024-03-16T10:00:00Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "507f1f77bcf86cd799440002"
+      },
+      "userId": null,
+      "name": "Guest User",
+      "email": "guest@example.com",
+      "phone": null,
+      "subject": "Product inquiry",
+      "message": "Do you ship internationally? I'm interested in some of your books.",
+      "status": "new",
+      "assignedTo": null,
+      "replies": [],
+      "createdAt": {
+        "$date": "2024-03-20T11:30:00Z"
+      },
+      "updatedAt": {
+        "$date": "2024-03-20T11:30:00Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "507f1f77bcf86cd799440003"
+      },
+      "userId": {
+        "$oid": "507f1f77bcf86cd799439012"
+      },
+      "name": "Sara Ali",
+      "email": "sara.ali@example.com",
+      "phone": "+966501234567",
+      "subject": "Refund request",
+      "message": "I would like to request a refund for my recent order. The book arrived damaged.",
+      "status": "in_progress",
+      "assignedTo": {
+        "$oid": "507f1f77bcf86cd799439003"
+      },
+      "replies": [],
+      "createdAt": {
+        "$date": "2024-03-19T09:00:00Z"
+      },
+      "updatedAt": {
+        "$date": "2024-03-19T14:00:00Z"
+      }
+    }
+  ],
+  "search_history": [
+    {
+      "_id": {
+        "$oid": "507f1f77bcf86cd799440101"
+      },
+      "userId": {
+        "$oid": "507f1f77bcf86cd799439011"
+      },
+      "query": "ancient egypt",
+      "resultsCount": 15,
+      "clickedProductId": {
+        "$oid": "507f1f77bcf86cd799439101"
+      },
+      "createdAt": {
+        "$date": "2024-03-20T10:30:00Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "507f1f77bcf86cd799440102"
+      },
+      "userId": {
+        "$oid": "507f1f77bcf86cd799439011"
+      },
+      "query": "saladin biography",
+      "resultsCount": 3,
+      "clickedProductId": {
+        "$oid": "507f1f77bcf86cd799439102"
+      },
+      "createdAt": {
+        "$date": "2024-03-19T14:00:00Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "507f1f77bcf86cd799440103"
+      },
+      "userId": {
+        "$oid": "507f1f77bcf86cd799439012"
+      },
+      "query": "artifact replica",
+      "resultsCount": 8,
+      "clickedProductId": null,
+      "createdAt": {
+        "$date": "2024-03-18T16:45:00Z"
+      }
+    }
+  ],
+  "app_settings": [
+    {
+      "_id": {
+        "$oid": "507f1f77bcf86cd799440201"
+      },
+      "key": "shipping_free_threshold",
+      "value": {
+        "$numberDecimal": "200"
+      },
+      "description": "Minimum order amount for free shipping",
+      "category": "shipping",
+      "updatedAt": {
+        "$date": "2024-03-01T00:00:00Z"
+      },
+      "updatedBy": {
+        "$oid": "507f1f77bcf86cd799439001"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "507f1f77bcf86cd799440202"
+      },
+      "key": "default_currency",
+      "value": "EGP",
+      "description": "Default currency for the app",
+      "category": "general",
+      "updatedAt": {
+        "$date": "2024-01-01T00:00:00Z"
+      },
+      "updatedBy": {
+        "$oid": "507f1f77bcf86cd799439001"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "507f1f77bcf86cd799440203"
+      },
+      "key": "maintenance_mode",
+      "value": false,
+      "description": "Enable/disable maintenance mode",
+      "category": "system",
+      "updatedAt": {
+        "$date": "2024-03-15T00:00:00Z"
+      },
+      "updatedBy": {
+        "$oid": "507f1f77bcf86cd799439001"
+      }
+    }
+  ]
+}
